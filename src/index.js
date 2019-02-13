@@ -184,4 +184,12 @@ export default class Tree {
     const elementWithId = this.params.autoAddingId ? this.addIdForElementIfNotExists(element) : element
     return this.params.autoAddingChildren ? this.addEmptyChildrenForElementIfNotExists(elementWithId) : elementWithId
   }
+
+  biBalance (a, b) { // todo:
+    return null
+  }
+
+  biFind (elm) { return null } // todo:
+
+  biAdd (elm) { return null } // todo:
 }
