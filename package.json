@@ -1,10 +1,17 @@
 {
   "name": "tree-data.js",
   "version": "1.0.0",
-  "description": "Js library for creation and simple editing tree data structures using functional programming style and functions like map, filter, reduce.",
+  "description": "tree-data.js is JavaScript library for working with hierarchical data structures using functional programming style and functions like map, filter, reduce etc.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ni1son/tree-data.js.git"
+  },
   "scripts": {
-    "test": "test"
+    "build": "babel src -d dist --source-map",
+    "test": "jest --runInBand --verbose",
+    "coverage": "jest --coverage --runInBand --verbose",
+    "eslint": "eslint src/**/*.js --ignore-pattern \"node_modules\""
   },
   "keywords": [
     "tree",
@@ -24,11 +31,20 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-node8": "^1.2.0",
     "eslint": "^5.13.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.1.0"
+  },
+  "babel": {
+    "presets": [
+      "node8"
+    ]
   }
 }

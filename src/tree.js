@@ -140,9 +140,13 @@ export default class Tree {
     return this
   }
 
-  getObject () { return this.tree }
+  getObject () {
+    return this.tree
+  }
 
-  setObject (tree) { this.tree = tree }
+  setObject (tree) {
+    this.tree = tree
+  }
 
   addIdForElementIfNotExists (element) {
     const { idName } = this.params
@@ -189,7 +193,11 @@ export default class Tree {
     return null
   }
 
-  biFind (elm) { return null } // todo:
+  biFind (elm) {
+    return null
+  } // todo:
 
-  biAdd (elm) { return null } // todo:
+  biAdd (elm) {
+    return null
+  } // todo:
 }
